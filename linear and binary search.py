@@ -1,3 +1,7 @@
+##########
+#@author: Praveen Dominic
+##########
+
 
 def linear_search(num_list, search_key):
     for index,elem in enumerate(num_list):
@@ -21,15 +25,13 @@ def binary_search(num_list, search_key):
         elif search_key < mid:
             r = mid - 1
         
-    
     return -1
-
 
 
 if __name__ == '__main__':
     num_list=[2,4,6,8,10,13,15,17,19,20]
-    # res = linear_search(num_list,search_key=19)
-    # print(res)
+    res = linear_search(num_list,search_key=19)
+    print(res)
     
     res = binary_search(num_list,search_key=19)
     print(res)
